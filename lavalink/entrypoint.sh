@@ -33,8 +33,7 @@ export INTERNAL_IP
 # Switch to the container's working directory
 cd /home/container || exit 1
 
-wget -nv -O ./start https://github.com/thebublik2013/IntHost-startup-scripts/raw/main/lavalink.sh
-chmod +x ./start
+curl -L -o lavalink.sh https://github.com/thebublik2013/IntHost-startup-scripts/raw/main/lavalink.sh
 
 # Print Java version
 printf "\033[1m\033[33mcontainer@IntHost~ \033[0mjava -version\n"
