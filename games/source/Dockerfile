@@ -29,8 +29,6 @@ LABEL       org.opencontainers.image.licenses=MIT
 
 ENV         DEBIAN_FRONTEND=noninteractive
 
-RUN        apt install -y ia32-libs openjdk-6-jdk:i386
-
 RUN         dpkg --add-architecture i386 \
             && apt update \
             && apt upgrade -y \
